@@ -1,16 +1,21 @@
-# Loops & Iterators
+#strings
+def myinput():
+  text = "x-DSPAM-confidence:  0.8475"
+  return text
 
-largest = None
-smallest = None
+def convert(text):
+  pos = text.find(':')
+  last = text[pos+1:]
+  end = float(last)
+  return(end)
 
-while True:
-    num = input("Enter a number? ")
+def output(end):
+    
+    print(end)
 
-    if num == "done":
-        break
-
-    # ...
-
-    print(num)
-
-print("Maximum", largest)
+def main():
+  text=myinput()
+  end=convert(text)
+  output(end)
+     
+main()
